@@ -16,5 +16,7 @@ RUN pip install pipenv
 RUN pipenv install
 RUN pipenv install gunicorn
 
+EXPOSE 8000
+
 RUN chmod +x ./entrypoint.sh
 CMD ["sh", "entrypoint.sh"]

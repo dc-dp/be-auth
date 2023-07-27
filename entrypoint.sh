@@ -1,3 +1,3 @@
 #! /bin/bash
 
-pipenv run gunicorn app:app
+pipenv run gunicorn --config gunicorn_config.py app:app
